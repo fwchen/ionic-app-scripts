@@ -27,7 +27,7 @@ describe('util', () => {
       const templateDir = join(
         baseDir,
         'node_modules',
-        'ionic-angular',
+        'tw-ionic-angular',
         'templates'
       );
       spyOn(helpers, helpers.getStringPropertyValue.name).and.returnValue(
@@ -43,7 +43,7 @@ describe('util', () => {
         dirToRead: join(templateDir, 'component'),
         dirToWrite: join(componentsDir, 'settings-view'),
         fileName: 'settings-view',
-        importStatement: 'import { IonicPage, NavController, NavParams } from \'ionic-angular\';',
+        importStatement: 'import { IonicPage, NavController, NavParams } from \'tw-ionic-angular\';',
         includeNgModule: true,
         includeSpec: true,
         ionicPage: '\n@IonicPage()',
@@ -81,7 +81,7 @@ describe('util', () => {
       const templateDir = join(
         baseDir,
         'node_modules',
-        'ionic-angular',
+        'tw-ionic-angular',
         'templates'
       );
       spyOn(helpers, helpers.getStringPropertyValue.name).and.returnValue(
@@ -97,7 +97,7 @@ describe('util', () => {
         dirToRead: join(templateDir, 'page'),
         dirToWrite: join(pagesDir, 'settings-view'),
         fileName: 'settings-view',
-        importStatement: 'import { IonicPage, NavController, NavParams } from \'ionic-angular\';',
+        importStatement: 'import { IonicPage, NavController, NavParams } from \'tw-ionic-angular\';',
         includeNgModule: true,
         includeSpec: true,
         ionicPage: '\n@IonicPage()',
@@ -136,7 +136,7 @@ describe('util', () => {
       const templateDir = join(
         baseDir,
         'node_modules',
-        'ionic-angular',
+        'tw-ionic-angular',
         'templates'
       );
       spyOn(helpers, helpers.getStringPropertyValue.name).and.returnValue(
@@ -152,7 +152,7 @@ describe('util', () => {
         dirToRead: join(templateDir, 'page'),
         dirToWrite: join(pagesDir, 'about'),
         fileName: 'about',
-        importStatement: 'import { NavController, NavParams } from \'ionic-angular\';',
+        importStatement: 'import { NavController, NavParams } from \'tw-ionic-angular\';',
         includeNgModule: false,
         includeSpec: true,
         ionicPage: null,
@@ -161,7 +161,7 @@ describe('util', () => {
       });
       expect(hydratedRequest.ionicPage).toEqual(null);
       expect(hydratedRequest.importStatement).toEqual(
-        'import { NavController, NavParams } from \'ionic-angular\';'
+        'import { NavController, NavParams } from \'tw-ionic-angular\';'
       );
       expect(hydratedRequest.type).toEqual(Constants.PAGE);
       expect(hydratedRequest.name).toEqual(request.name);
@@ -186,7 +186,7 @@ describe('util', () => {
       const templateDir = join(
         baseDir,
         'node_modules',
-        'ionic-angular',
+        'tw-ionic-angular',
         'templates'
       );
       const context: BuildContext = { pagesDir };
@@ -222,7 +222,7 @@ describe('util', () => {
       const templateDir = join(
         baseDir,
         'node_modules',
-        'ionic-angular',
+        'tw-ionic-angular',
         'templates'
       );
       const context: BuildContext = { pagesDir };
@@ -256,7 +256,7 @@ describe('util', () => {
     it('should get a map of templates and their content back', () => {
       // arrange
       const templateDir =
-        '/Users/noone/project/node_modules/ionic-angular/templates/component';
+        '/Users/noone/project/node_modules/tw-ionic-angular/templates/component';
       const knownValues = [
         'html.tmpl',
         'scss.tmpl',
@@ -288,7 +288,7 @@ describe('util', () => {
     it('should preserve all templates', () => {
       const map = new Map<string, string>();
       const templateDir =
-        '/Users/noone/project/node_modules/ionic-angular/templates/component';
+        '/Users/noone/project/node_modules/tw-ionic-angular/templates/component';
       const fileContent = 'SomeContent';
       const knownValues = [
         'html.tmpl',
@@ -313,7 +313,7 @@ describe('util', () => {
     it('should remove spec', () => {
       const map = new Map<string, string>();
       const templateDir =
-        '/Users/noone/project/node_modules/ionic-angular/templates/component';
+        '/Users/noone/project/node_modules/tw-ionic-angular/templates/component';
       const fileContent = 'SomeContent';
       const knownValues = [
         'html.tmpl',
@@ -343,7 +343,7 @@ describe('util', () => {
     it('should remove spec and module', () => {
       const map = new Map<string, string>();
       const templateDir =
-        '/Users/noone/project/node_modules/ionic-angular/templates/component';
+        '/Users/noone/project/node_modules/tw-ionic-angular/templates/component';
       const fileContent = 'SomeContent';
       const knownValues = [
         'html.tmpl',
@@ -434,7 +434,7 @@ export class $CLASSNAMEComponent {
       const fileFiveContent = `
 import { NgModule } from '@angular/core';
 import { $CLASSNAME } from './$FILENAME';
-import { IonicModule } from 'ionic-angular';
+import { IonicModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -528,7 +528,7 @@ $TAB_CONTENT
     it('should return the list of files generated', () => {
       const map = new Map<string, string>();
       const templateDir =
-        '/Users/noone/project/node_modules/ionic-angular/templates/component';
+        '/Users/noone/project/node_modules/tw-ionic-angular/templates/component';
       const fileContent = 'SomeContent';
       const knownValues = [
         'html.tmpl',

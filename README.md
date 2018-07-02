@@ -111,8 +111,8 @@ npm run build --webpack ./config/webpack.dev.config.js
 | www directory   | `ionic_www_dir`     | `--wwwDir`    | `www`           | The deployable directory containing everything needed to run the app |
 | build directory | `ionic_build_dir`   | `--buildDir`  | `build`         | The build process uses this directory to store generated files, etc |
 | temp directory   | `ionic_tmp_dir`     | `--tmpDir`    | `.tmp`           | Temporary directory for writing files for debugging and various build tasks |
-| ionic-angular directory | `ionic_angular_dir` | `--ionicAngularDir` | `ionic-angular` | ionic-angular directory |
-| ionic-angular entry point | `ionic_angular_entry_point` | `--ionicAngularEntryPoint` | `index.js` | entry point file for ionic-angular |
+| tw-ionic-angular directory | `ionic_angular_dir` | `--ionicAngularDir` | `tw-ionic-angular` | tw-ionic-angular directory |
+| tw-ionic-angular entry point | `ionic_angular_entry_point` | `--ionicAngularEntryPoint` | `index.js` | entry point file for tw-ionic-angular |
 | source map type | `ionic_source_map_type`  | `--sourceMapType` | `source-map` | Chooses the webpack `devtool` option. `eval` and `source-map` are supported |
 | generate source map | `ionic_generate_source_map`  | `--generateSourceMap` | `true` | Determines whether to generate a source map or not |
 | tsconfig path | `ionic_ts_config`  | `--tsconfig` | `{{rootDir}}/tsconfig.json` | absolute path to tsconfig.json |
@@ -149,7 +149,7 @@ These environment variables are automatically set to [Node's `process.env`](http
 | `IONIC_BUILD_DIR`          | The absolute path to the app's bundled js and css files.             |
 | `IONIC_TMP_DIR`            | Temp directory for debugging generated/optimized code and various build tasks |
 | `IONIC_NODE_MODULES_DIR`   | The absolute path to the `node_modules` directory.                   |
-| `IONIC_ANGULAR_DIR`        | The absolute path to the `ionic-angular` node_module directory.      |
+| `IONIC_ANGULAR_DIR`        | The absolute path to the `tw-ionic-angular` node_module directory.      |
 | `IONIC_APP_SCRIPTS_DIR`    | The absolute path to the `@ionic/app-scripts` node_module directory. |
 | `IONIC_SOURCE_MAP_TYPE`    | The Webpack `devtool` setting. `eval` and `source-map` are supported.|
 | `IONIC_GENERATE_SOURCE_MAP`| Determines whether to generate a sourcemap or not.                   |

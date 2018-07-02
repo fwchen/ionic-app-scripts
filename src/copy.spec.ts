@@ -18,11 +18,11 @@ describe('copy task', () => {
           dest: '{{WWW}}'
         },
         copyFonts: {
-          src: ['{{ROOT}}/node_modules/ionicons/dist/fonts/**/*', '{{ROOT}}/node_modules/ionic-angular/fonts/**/*'],
+          src: ['{{ROOT}}/node_modules/ionicons/dist/fonts/**/*', '{{ROOT}}/node_modules/tw-ionic-angular/fonts/**/*'],
           dest: '{{WWW}}/assets/fonts'
         },
         copyPolyfills: {
-          src: [`{{ROOT}}/node_modules/ionic-angular/polyfills/${process.env.POLLYFILL_NAME}.js`],
+          src: [`{{ROOT}}/node_modules/tw-ionic-angular/polyfills/${process.env.POLLYFILL_NAME}.js`],
           dest: '{{BUILD}}'
         },
         someOtherOption: {

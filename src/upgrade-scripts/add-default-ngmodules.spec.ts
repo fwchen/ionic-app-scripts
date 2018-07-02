@@ -102,7 +102,7 @@ describe('add default ngmodules upgrade script', () => {
 
       const knownNgModulePageOne = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 import { PageOne } from './page-one';
 
 @NgModule({
@@ -119,7 +119,7 @@ export class PageOneModule {}
 
       const knownNgModulePageTwo = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 import { PageTwo } from './page-two';
 
 @NgModule({
@@ -136,7 +136,7 @@ export class PageTwoModule {}
 
       const knownNgModuleModalPage = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 import { ModalOne } from './modal-one';
 
 @NgModule({
@@ -172,7 +172,7 @@ export class ModalOneModule {}
 function getClassContent(className: string, folderName: string) {
   return `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({

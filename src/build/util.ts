@@ -87,7 +87,7 @@ export async function readVersionOfDependencies(context: BuildContext) {
   if (!getBooleanPropertyValue(Constants.ENV_SKIP_IONIC_ANGULAR_VERSION)) {
     context.ionicAngularVersion = semverStringToObject(versions[1]);
   }
-  // index could be 1 or 2 depending on if you read ionic-angular, its always the last one bro
+  // index could be 1 or 2 depending on if you read tw-ionic-angular, its always the last one bro
   context.typescriptVersion = semverStringToObject(versions[versions.length - 1]);
 }
 

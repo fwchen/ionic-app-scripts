@@ -102,7 +102,7 @@ Supports Angular 5
 ### Bug Fixes
 
 * **aot:** pass genDir to ng4 ([7506764](https://github.com/ionic-team/ionic-app-scripts/commit/7506764))
-* **config:** only read ionic-angular package json for version info in apps, not in the Ionic repo itself ([700ca04](https://github.com/ionic-team/ionic-app-scripts/commit/700ca04))
+* **config:** only read tw-ionic-angular package json for version info in apps, not in the Ionic repo itself ([700ca04](https://github.com/ionic-team/ionic-app-scripts/commit/700ca04))
 * **deep-linking:** use .ts file extension for lazy loading in dev mode, and .js in AoT mode since the AoT compiler no longer emits an ngfactory.ts file ([dd99f14](https://github.com/ionic-team/ionic-app-scripts/commit/dd99f14))
 * **live-server:** content.toString() crash ([#1288](https://github.com/ionic-team/ionic-app-scripts/issues/1288)) ([07e7e05](https://github.com/ionic-team/ionic-app-scripts/commit/07e7e05))
 * **templates:** escape strings in template ([484d90d](https://github.com/ionic-team/ionic-app-scripts/commit/484d90d))
@@ -275,7 +275,7 @@ If you're customizing the build process and have a dependency that utilized `web
 
 ### Breaking Changes
 
-In order to speed up the bundling process, we have separated `node_modules` code into a new, generated file called `vendor.js`. This means that on every change, `ionic-angular`, `@angular`, etc won't need to be processed by `webpack` :tada:
+In order to speed up the bundling process, we have separated `node_modules` code into a new, generated file called `vendor.js`. This means that on every change, `tw-ionic-angular`, `@angular`, etc won't need to be processed by `webpack` :tada:
 
 This means that `src/index.html` must be modified to include a new vendor script tag `<script src="build/vendor.js"></script>`. This new script tag must be placed above the `main.js` script tag. For example,
 
@@ -434,7 +434,7 @@ Ionic updated to npm 5 across the board, so please update to npm 5 to utilize ou
 
 ### Bug Fixes
 
-* **webpack:** make ionic-angular/util dir dynamic and use the environment variable of ionic angular ([d3346b3](https://github.com/ionic-team/ionic-app-scripts/commit/d3346b3))
+* **webpack:** make tw-ionic-angular/util dir dynamic and use the environment variable of ionic angular ([d3346b3](https://github.com/ionic-team/ionic-app-scripts/commit/d3346b3))
 
 
 
@@ -609,7 +609,7 @@ Ionic updated to npm 5 across the board, so please update to npm 5 to utilize ou
 * **deeplinks:** make deep link config parsing support 2.x and 3.x deep link config ([1ac7116](https://github.com/ionic-team/ionic-app-scripts/commit/1ac7116))
 * **deeplinks:** provide deep-links config to webpack as needed vs via the constructor ([a735e96](https://github.com/ionic-team/ionic-app-scripts/commit/a735e96))
 * **http-server:** drive reading ionic.config.json based on config value ([e2d0d83](https://github.com/ionic-team/ionic-app-scripts/commit/e2d0d83))
-* **optimizations:** throw error when ionic-angular index file isn't found ([6437005](https://github.com/ionic-team/ionic-app-scripts/commit/6437005))
+* **optimizations:** throw error when tw-ionic-angular index file isn't found ([6437005](https://github.com/ionic-team/ionic-app-scripts/commit/6437005))
 * **transpile:** get tsconfig.json location from config value ([79b0eeb](https://github.com/ionic-team/ionic-app-scripts/commit/79b0eeb))
 
 

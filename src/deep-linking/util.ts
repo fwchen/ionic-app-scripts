@@ -379,7 +379,7 @@ export function generateDefaultDeepLinkNgModuleContent(pageFilePath: string, cla
 
   return `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 import { ${className} } from './${importFrom}';
 
 @NgModule({
@@ -431,7 +431,7 @@ export function purgeDeepLinkDecoratorTSTransformImpl(transformContext: Transfor
   function visitImportDeclaration(importDeclaration: ImportDeclaration, sourceFile: SourceFile): ImportDeclaration {
 
     if (importDeclaration.moduleSpecifier
-        && (importDeclaration.moduleSpecifier as StringLiteral).text === 'ionic-angular'
+        && (importDeclaration.moduleSpecifier as StringLiteral).text === 'tw-ionic-angular'
         && importDeclaration.importClause
         && importDeclaration.importClause.namedBindings
         && (importDeclaration.importClause.namedBindings as NamedImports).elements
@@ -506,7 +506,7 @@ export function purgeDeepLinkImport(inputText: string): string {
 
   importDeclarations.forEach(importDeclaration => {
     if (importDeclaration.moduleSpecifier
-        && (importDeclaration.moduleSpecifier as StringLiteral).text === 'ionic-angular'
+        && (importDeclaration.moduleSpecifier as StringLiteral).text === 'tw-ionic-angular'
         && importDeclaration.importClause
         && importDeclaration.importClause.namedBindings
         && (importDeclaration.importClause.namedBindings as NamedImports).elements

@@ -22,15 +22,15 @@ export function hydrateRequest(context: BuildContext, request: GeneratorRequest)
 
   if (!!hydrated.includeNgModule) {
     if (hydrated.type === 'tabs') {
-      hydrated.importStatement = `import { IonicPage, NavController } from 'ionic-angular';`;
+      hydrated.importStatement = `import { IonicPage, NavController } from 'tw-ionic-angular';`;
     } else {
-      hydrated.importStatement = `import { IonicPage, NavController, NavParams } from 'ionic-angular';`;
+      hydrated.importStatement = `import { IonicPage, NavController, NavParams } from 'tw-ionic-angular';`;
     }
     hydrated.ionicPage = '\n@IonicPage()';
   } else {
 
     hydrated.ionicPage = null;
-    hydrated.importStatement = `import { NavController, NavParams } from 'ionic-angular';`;
+    hydrated.importStatement = `import { NavController, NavParams } from 'tw-ionic-angular';`;
 
   }
   hydrated.dirToRead = join(getStringPropertyValue(Constants.ENV_VAR_IONIC_ANGULAR_TEMPLATE_DIR), request.type);
@@ -56,9 +56,9 @@ export function hydrateTabRequest(context: BuildContext, request: GeneratorTabRe
   }, h) as HydratedGeneratorRequest;
 
   if (hydrated.includeNgModule) {
-    hydrated.tabsImportStatement += `import { IonicPage, NavController } from 'ionic-angular';`;
+    hydrated.tabsImportStatement += `import { IonicPage, NavController } from 'tw-ionic-angular';`;
   } else {
-    hydrated.tabsImportStatement += `import { NavController } from 'ionic-angular';`;
+    hydrated.tabsImportStatement += `import { NavController } from 'tw-ionic-angular';`;
   }
 
   for (let i = 0; i < request.tabs.length; i++) {

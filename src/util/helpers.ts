@@ -70,7 +70,7 @@ export function getSystemData(userRootDir: string) {
     if (userPackageJson) {
       const userDependencies = userPackageJson.dependencies;
       if (userDependencies) {
-        d.ionicFramework = userDependencies['ionic-angular'];
+        d.ionicFramework = userDependencies['tw-ionic-angular'];
         d.ionicNative = userDependencies['ionic-native'];
         d.angularCore = userDependencies['@angular/core'];
         d.angularCompilerCli = userDependencies['@angular/compiler-cli'];

@@ -62,7 +62,7 @@ describe('util', () => {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   name: 'someName',
@@ -121,7 +121,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   segment: 'someSegmentBro',
@@ -179,7 +179,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   defaultHistory: ['page-one', 'page-two'],
@@ -236,7 +236,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   priority: 'high'
@@ -292,7 +292,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
 })
@@ -347,7 +347,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -402,7 +402,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
 })
@@ -459,7 +459,7 @@ export class HomePage {
       const knownContent = `
 import { Component } from '@angular/core';
 
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -589,7 +589,7 @@ export function removeDecorators(fileName: string, source: string): string {
     it('should return non-aot adjusted paths when not in AoT', () => {
       const pageNgModuleContent = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
@@ -622,7 +622,7 @@ export class HomePageModule {}
     it('should return adjusted paths to account for AoT', () => {
       const pageNgModuleContent = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
@@ -657,7 +657,7 @@ export class HomePageModule {}
 
       const pageOneContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 
 @Component({
@@ -685,7 +685,7 @@ export class PageOne {
       const pageOneNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageOne } from './page-one';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -704,7 +704,7 @@ export class PageOneModule {}
 
       const pageTwoContent = `
 import { Component } from '@angular/core';
-import { LoadingController, ModalController, NavController, PopoverController } from 'ionic-angular';
+import { LoadingController, ModalController, NavController, PopoverController } from 'tw-ionic-angular';
 
 
 @Component({
@@ -748,7 +748,7 @@ export class PageTwo {
       const pageTwoNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageTwo } from './page-two';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -765,7 +765,7 @@ export class PageTwoModule {
 
       const pageSettingsContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 /*
   Generated class for the PageTwo page.
@@ -795,7 +795,7 @@ export class PageThree {
       const pageSettingsNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageThree } from './page-three';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -840,7 +840,7 @@ export class PageThreeModule {
 
       const pageOneContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 
 @IonicPage({
@@ -871,7 +871,7 @@ export class PageOne {
       const pageOneNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageOne } from './page-one';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -890,7 +890,7 @@ export class PageOneModule {}
 
       const pageTwoContent = `
 import { Component } from '@angular/core';
-import { LoadingController, ModalController, NavController, PopoverController } from 'ionic-angular';
+import { LoadingController, ModalController, NavController, PopoverController } from 'tw-ionic-angular';
 
 
 @Component({
@@ -934,7 +934,7 @@ export class PageTwo {
       const pageTwoNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageTwo } from './page-two';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -951,7 +951,7 @@ export class PageTwoModule {
 
       const pageSettingsContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   segment: 'someSegmentBro',
@@ -980,7 +980,7 @@ export class PageThree {
       const pageSettingsNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageThree } from './page-three';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1031,7 +1031,7 @@ export class PageThreeModule {
 
       const pageOneContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 
 @IonicPage({
@@ -1062,7 +1062,7 @@ export class PageOne {
       const pageOneNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageOne } from './page-one';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1081,7 +1081,7 @@ export class PageOneModule {}
 
       const pageTwoContent = `
 import { Component } from '@angular/core';
-import { LoadingController, ModalController, NavController, PopoverController } from 'ionic-angular';
+import { LoadingController, ModalController, NavController, PopoverController } from 'tw-ionic-angular';
 
 
 
@@ -1127,7 +1127,7 @@ export class PageTwo {
       const pageTwoNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageTwo } from './page-two';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1144,7 +1144,7 @@ export class PageTwoModule {
 
       const pageSettingsContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   segment: 'someSegmentBro',
@@ -1173,7 +1173,7 @@ export class PageThree {
       const pageSettingsNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageThree } from './page-three';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1252,7 +1252,7 @@ export class PageThreeModule {
     it('should throw when it cant find an NgModule as a peer to the page with a deep link config', () => {
       const pageOneContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 
 @IonicPage({
@@ -1283,7 +1283,7 @@ export class PageOne {
       const pageOneNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageOne } from './page-one';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1302,7 +1302,7 @@ export class PageOneModule {}
 
       const pageTwoContent = `
 import { Component } from '@angular/core';
-import { LoadingController, ModalController, NavController, PopoverController } from 'ionic-angular';
+import { LoadingController, ModalController, NavController, PopoverController } from 'tw-ionic-angular';
 
 
 
@@ -1348,7 +1348,7 @@ export class PageTwo {
       const pageTwoNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageTwo } from './page-two';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1365,7 +1365,7 @@ export class PageTwoModule {
 
       const pageSettingsContent = `
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'tw-ionic-angular';
 
 @IonicPage({
   segment: 'someSegmentBro',
@@ -1394,7 +1394,7 @@ export class PageThree {
       const pageSettingsNgModuleContent = `
 import { NgModule } from '@angular/core';
 import { PageThree } from './page-three';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 
 @NgModule({
   declarations: [
@@ -1453,7 +1453,7 @@ export class PageThreeModule {
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1490,7 +1490,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1520,7 +1520,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1550,7 +1550,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1679,7 +1679,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1702,7 +1702,7 @@ export class AppModule {}
       const expectedResult = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1749,7 +1749,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1772,7 +1772,7 @@ export class AppModule {}
       const expectedResult = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1819,7 +1819,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1842,7 +1842,7 @@ export class AppModule {}
       const expectedResult = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1889,7 +1889,7 @@ export class AppModule {}
       const knownContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1912,7 +1912,7 @@ export class AppModule {}
       const expectedResult = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -1951,7 +1951,7 @@ export class AppModule {}
     it('should generate a default NgModule for a DeepLinked component', () => {
       const knownFileContent = `
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule } from 'tw-ionic-angular';
 import { PageOne } from './page-one';
 
 @NgModule({
@@ -2019,7 +2019,7 @@ export class PageOneModule {}
       const ngModuleContent = `
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'tw-ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePageModule } from '../pages/home/home.module';
@@ -2061,7 +2061,7 @@ export class AppModule {}
       const input = `
 import { Component } from '@angular/core';
 
-import { IonicPage, PopoverController } from 'ionic-angular';
+import { IonicPage, PopoverController } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -2083,7 +2083,7 @@ export class AboutPage {
 const expectedContent = `
 import { Component } from '@angular/core';
 
-import { PopoverController } from 'ionic-angular';
+import { PopoverController } from 'tw-ionic-angular';
 
 
 @Component({
@@ -2111,7 +2111,7 @@ export class AboutPage {
       const input = `
 import { Component } from '@angular/core';
 
-import { IonicPage, PopoverController } from 'ionic-angular';
+import { IonicPage, PopoverController } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -2132,7 +2132,7 @@ export class AboutPage {
       const expectedText = `
 import { Component } from '@angular/core';
 
-import { PopoverController } from 'ionic-angular';
+import { PopoverController } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -2158,7 +2158,7 @@ export class AboutPage {
       const input = `
 import { Component } from '@angular/core';
 
-import { IonicPage } from 'ionic-angular';
+import { IonicPage } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -2207,7 +2207,7 @@ export class AboutPage {
       const input = `
 import { Component } from '@angular/core';
 
-import { IonicPage } from 'ionic-angular';
+import { IonicPage } from 'tw-ionic-angular';
 
 @IonicPage()
 @Component({
@@ -2227,7 +2227,7 @@ export class AboutPage {
 `;
 
 const expected = `import { Component } from "@angular/core";
-import { } from "ionic-angular";
+import { } from "tw-ionic-angular";
 @Component({
     selector: "page-about",
     templateUrl: "about.html"

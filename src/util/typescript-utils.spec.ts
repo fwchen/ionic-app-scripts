@@ -5,7 +5,7 @@ describe('typescript-utils', () => {
     it('should return the NgModule class name', () => {
       const knownContent = `
 import { NgModule } from '@angular/core';
-import { DeepLinkModule } from 'ionic-angular';
+import { DeepLinkModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
@@ -29,7 +29,7 @@ export class HomePageModule {}
     it('should return the NgModule class name when there are multiple class declarations but only one is decorated', () => {
       const knownContent = `
 import { NgModule } from '@angular/core';
-import { DeepLinkModule } from 'ionic-angular';
+import { DeepLinkModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
@@ -62,7 +62,7 @@ export class TacoBell {
     it('should throw an error an NgModule isn\'t found', () => {
       const knownContent = `
 import { NgModule } from '@angular/core';
-import { DeepLinkModule } from 'ionic-angular';
+import { DeepLinkModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
@@ -84,7 +84,7 @@ export class HomePageModule {}
     it('should throw an error an multiple NgModules are found', () => {
       const knownContent = `
 import { NgModule } from '@angular/core';
-import { DeepLinkModule } from 'ionic-angular';
+import { DeepLinkModule } from 'tw-ionic-angular';
 
 import { HomePage } from './home';
 
